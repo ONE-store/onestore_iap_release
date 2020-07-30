@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Lucky ONE</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok">Ok</string>
+
+    <string name="msg_alert_no_coin">보유 코인이 부족합니다.\n코인을 구매하시겠습니까?\n\nNot enough coins. Do you want to buy coins?</string>
+    <string name="msg_alert_dev_payload_invalid">Developer payload 정보가 유효하지 않습니다.\n\nDeveloper payload information is invalid.</string>
+    <string name="msg_alert_signature_invalid">Signature 정보가 유효하지 않습니다.\n\nSignature information is invalid.</string>
+
+    <string name="btn_number_generate_inapp_ko">번호 생성하기 (5코인 차감)</string>
+    <string name="btn_number_generate_inapp_en">Generate Numbers (spend 5 coins)</string>
+    <string name="btn_number_generate_auto_ko">번호 생성하기 (무제한 – 월정액 상품)</string>
+    <string name="btn_number_generate_auto_en">Generate Numbers (Unlimited play – Subscription)</string>
+
+    <string name="msg_earning_coins">
+        <![CDATA[
+            축하합니다!<br/>
+            <b>%1$d 코인을 획득했습니다!</b><br/><br/>
+            Congrats!<br/>
+            You won %1$d coins!
+        ]]>
+    </string>
+
+    <string name="msg_required_coins">
+        <![CDATA[
+            보유 코인이 부족합니다.<br/>
+            코인을 구매하시겠습니까?<br/><br/>
+            Not enough coins.<br/>
+            Do you want to buy coins?
+        ]]>
+    </string>
+
+    <string name="msg_purchase_success_inapp">
+        <![CDATA[
+            결제에 성공했습니다.<br/>
+            <b>구매 상품 : %1$d coins</b><br/><br/>
+            Paid successfully.<br/>
+            You bought %1$d coins.
+        ]]>
+    </string>
+
+    <string name="msg_purchase_success_one_more">
+        <![CDATA[
+            결제에 성공했습니다.<br/>
+            <b>구매 상품 : One more item</b><br/><br/>
+            Paid successfully.<br/>
+            You bought One more item(subscription).
+        ]]>
+    </string>
+
+    <string name="msg_purchase_success_auto">
+        <![CDATA[
+            결제에 성공했습니다.<br/>
+            <b>구매 상품 : Unlimited play(월정액)</b><br/><br/>
+            Paid successfully.<br/>
+            You bought Unlimited play(subscription).
+        ]]>
+    </string>
+
+    <string name="msg_product_detail_not_found">구매할 수 있는 상품이 없습니다. \nThere are no products available for purchase.</string>
+
+    <string name="desc_setting_auto_not_purchased_ko">월정액 상품에 가입되어 있지 않습니다.</string>
+    <string name="desc_setting_auto_not_purchased_en">월정액 상품은 메인 화면 내 ‘BUY’ 버튼을 클릭하여 가입 하실 수 있습니다. \nYou have not purchased a subscription.</string>
+    <string name="desc_setting_auto_purchased_ko">월정액 상품에 가입되어 있습니다.</string>
+    <string name="desc_setting_auto_purchased_en">You purchased the subscription.</string>
+
+    <string name="desc_setting_notice">안내 / Notice</string>
+    <string name="desc_setting_notice_desc">이 앱은 스토어에서 In-App SDK의 이해를 돕기 위한 샘플 앱으로, 상용 판매 목적으로 만들어진 앱이 아닙니다.
+        \n스토어 또는 스토어 In-App 상품 개발에 대해 더 궁금한 점이 있을 경우 스토어 개발자센터를 방문해주세요.
+        \n\nThis is a demo app for Store In-App Purchase SDK.
+        \nFor more information, visit the Store developer center.</string>
+
+    <string name="msg_setting_cancel_auto_ko">월정액 해지 예약</string>
+    <string name="msg_setting_cancel_auto_en">Cancel the subscription</string>
+
+    <string name="msg_setting_resubscribe_auto_ko">월정액 해지 예약 취소</string>
+    <string name="msg_setting_resubscribe_auto_en">Resubscribe</string>
+
+    <string name="msg_setting_cancel_auto_complete">월정액 상품이 해지 예약되었습니다. 다음 결제일 전까지 이용이 가능하며, 이후 해지가 완료됩니다. \n\nSubscription canceled successfully. You will still enjoy for the remainder of your billing period.</string>
+    <string name="msg_setting_resubscribe_auto_alert">월정액 해지 예약을 취소 하시겠습니까?\n\nDo you want to resubscribe?</string>
+    <string name="msg_setting_resubscribe_auto_complete">월정액 해지 예약이 취소되었습니다.\n\nYour resubscription has been processed successfully.</string>
+
+    <string name="btn_buy_5_coins">5 coins - <b>5,000 won</b></string>
+    <string name="btn_buy_10_coins">10 coins - <b>10,000 won</b></string>
+    <string name="btn_buy_60_coins">One more item - <b>50,000 won</b></string>
+    <string name="btn_buy_unlimited">Unlimited play - <b>100,000 won</b></string>
+    <string name="btn_buy_unlimited_desc">월정액 / Subscription</string>
+
+</resources>
+
+
