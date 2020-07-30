@@ -1,1 +1,1 @@
-# iap_v6
+# onestore_iap_release
