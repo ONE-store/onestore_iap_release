@@ -6,8 +6,8 @@
         "store_service_info": {
             "action": "com.gaa.extern.iap.GlobalInAppService.ACTION",
             "package_name": "com.skt.skaf.OA00018282",
-            "service_name": "com.onestore.extern.iap.InAppPurchaseService",
-            "min_version": 61500
+            "service_name": "com.onestore.extern.iap.InAppGlobalPurchaseService",
+            "min_version": 70000
         }
     }
 ]
