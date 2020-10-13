@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Lucky ONE v19"

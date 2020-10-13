@@ -123,8 +123,9 @@ public final class PurchaseManager implements PurchasesUpdatedListener {
             Log.w(TAG, "handleErrorCode() RESULT_NEED_UPDATE");
             mCallback.onNeedUpdate();
         } else {
-            Log.d(TAG, "handleErrorCode() error: ${iapResult.responseCode}");
-            mCallback.onError(iapResult.getMessage());
+            String message = iapResult.getMessage() + "(" + iapResult.getResponseCode() + ")";
+            Log.d(TAG, "handleErrorCode() error: " + message);
+            mCallback.onError(message);
         }
     }
 
@@ -191,6 +192,7 @@ public final class PurchaseManager implements PurchasesUpdatedListener {
                     public void onConsumeResponse(IapResult iapResult, PurchaseData purchaseData) {
                         if (iapResult.isSuccess()) {
                             if (purchaseData.getPurchaseToken().equals(data.getPurchaseToken())) {
+                                mTokenToBe.remove(data.getPurchaseToken());
                                 mCallback.onConsumeFinished(purchaseData, iapResult);
                             } else {
                                 mCallback.onError("purchaseToken not equal");
@@ -223,6 +225,7 @@ public final class PurchaseManager implements PurchasesUpdatedListener {
                     public void onAcknowledgeResponse(IapResult iapResult, PurchaseData purchaseData) {
                         if (iapResult.isSuccess()) {
                             if (data.getPurchaseToken().equals(purchaseData.getPurchaseToken())) {
+                                mTokenToBe.remove(data.getPurchaseToken());
                                 mCallback.onAcknowledgeFinished(purchaseData, iapResult);
                             } else {
                                 mCallback.onError("purchaseToken not equal");
@@ -312,11 +315,14 @@ public final class PurchaseManager implements PurchasesUpdatedListener {
         });
     }
 
-    public void manageRecurringProductAsync(final PurchaseData purchaseData, final RecurringProductListener listener) {
+    public void manageRecurringProductAsync(final PurchaseData purchaseData, final String recurringAction, final RecurringProductListener listener) {
         executeServiceRequest(new Runnable() {
             @Override
             public void run() {
-                RecurringProductParams params = RecurringProductParams.newBuilder().setPurchaseData(purchaseData).build();
+                RecurringProductParams params = RecurringProductParams.newBuilder()
+                        .setPurchaseData(purchaseData)
+                        .setRecurringAction(recurringAction)
+                        .build();
                 mPurchaseClient.manageRecurringProductAsync(params, listener);
             }
         });

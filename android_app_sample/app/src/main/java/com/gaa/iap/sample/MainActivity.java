@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements PurchaseManager.C
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        @RecurringState int recurringState;
+        final @RecurringState int recurringState;
 
         // 설정화면 진입 전 월정액 UI 업데이트를 위하여,
         // 현재 저장된 월정액상품(auto) recurringState 정보를 설정화면으로 넘겨줍니다.
@@ -170,8 +170,12 @@ public class MainActivity extends AppCompatActivity implements PurchaseManager.C
             public void manageRecurringProduct() {
                 PurchaseData purchaseData = getMonthlyItem();
                 if (purchaseData != null) {
+                    String recurringAction = RecurringAction.REACTIVATE;
+                    if (recurringState == RecurringState.RECURRING) {
+                        recurringAction = RecurringAction.CANCEL;
+                    }
                     // 월정액 해지예약 또는 해지예약 취소 수행
-                    manageRecurringAuto(purchaseData);
+                    manageRecurringAuto(purchaseData, recurringAction);
                 }
             }
         }).show();
@@ -345,10 +349,10 @@ public class MainActivity extends AppCompatActivity implements PurchaseManager.C
     }
 
     // 월정액상품(auto)의 상태변경(해지예약 / 해지예약 취소)를 진행합니다.
-    private void manageRecurringAuto(final PurchaseData purchaseData) {
+    private void manageRecurringAuto(final PurchaseData purchaseData, final String recurringAction) {
         showProgressDialog();
 
-        mPurchaseManager.manageRecurringProductAsync(purchaseData, new RecurringProductListener() {
+        mPurchaseManager.manageRecurringProductAsync(purchaseData, recurringAction, new RecurringProductListener() {
             @Override
             public void onRecurringResponse(IapResult iapResult, PurchaseData purchaseData, @RecurringAction String action) {
 
