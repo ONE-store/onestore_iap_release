@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.gaa.appdev.subscription.sample.ui.SettingsActivity" />
+
+        <variable
+            name="vm"
+            type="com.gaa.appdev.subscription.sample.ui.SettingsViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.SettingsActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="false">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@color/c_31766a"
+                android:elevation="10dp"
+                app:contentInsetEnd="20dp"
+                app:contentInsetStart="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="@{() -> view.onBackPressed()}"
+                        android:src="@drawable/round_arrow_back"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Settings"
+                        android:textColor="@color/c_ffffff"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/iv_back"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="현재 구독중 상품"-->
+<!--                    android:textColor="@color/c_333333"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TableLayout-->
+<!--                    android:id="@+id/tl_info"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:background="@drawable/round_backgound"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_title">-->
+<!--                    <TableRow>-->
+<!--                        <TextView android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            android:text="구독 상품" />-->
+
+<!--                        <TextView android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="end"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            app:text="@{vm.currentPurchase.title}"-->
+<!--                            android:text="1년" />-->
+<!--                    </TableRow>-->
+<!--                    <TableRow-->
+<!--                        android:layout_marginTop="10dp">-->
+<!--                        <TextView android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            android:text="구독 기간" />-->
+
+<!--                        <TextView android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="end"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            app:text="@{vm.currentPurchase.subscriptionPeriod}"-->
+<!--                            android:text="1년" />-->
+<!--                    </TableRow>-->
+<!--                    <TableRow-->
+<!--                        android:layout_marginTop="10dp">-->
+<!--                        <TextView android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            android:text="무료 이용 기간" />-->
+
+<!--                        <TextView android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="end"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            app:text="@{vm.currentPurchase.freeTrialPeriod}"-->
+<!--                            android:text="1년" />-->
+<!--                    </TableRow>-->
+<!--                    <TableRow-->
+<!--                        android:layout_marginTop="10dp">-->
+<!--                        <TextView android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            android:text="결제 유예기간" />-->
+
+<!--                        <TextView android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="end"-->
+<!--                            android:textColor="@color/c_333333"-->
+<!--                            app:text="@{vm.currentPurchase.paymentGracePeriod}"-->
+<!--                            android:text="1년" />-->
+<!--                    </TableRow>-->
+<!--                </TableLayout>-->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:onClick="@{view::showOptionDialog}">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/c_333333"
+                            android:textSize="16sp"
+                            android:text="@string/option_title" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_navigate_next"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

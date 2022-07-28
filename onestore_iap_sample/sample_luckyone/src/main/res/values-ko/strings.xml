@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LuckyONE</string>
+    <string name="msg_alert_no_coin">보유 코인이 부족합니다.\n코인을 구매하시겠습니까?</string>
+    <string name="msg_alert_signature_invalid">Signature 정보가 유효하지 않습니다.</string>
+    <string name="msg_alert_move_subscription_detail">당신은 구독한 상품이 있습니다. 구독 상품 상세 화면으로 이동할까요?</string>
+
+    <string name="btn_number_generate_inapp_primary">번호 생성하기</string>
+    <string name="btn_number_generate_inapp_desc">(5코인 차감)</string>
+    <string name="btn_number_generate_subs_primary">번호 생성하기</string>
+    <string name="btn_number_generate_subs_desc">(무제한 – 월정액 상품)</string>
+
+    <string name="msg_earning_coins">
+        <![CDATA[
+            축하합니다!<br/>
+            <b>%1$d 코인을 획득했습니다!</b>
+        ]]>
+    </string>
+
+    <string name="msg_purchase_success_inapp">
+        <![CDATA[
+            결제에 성공했습니다.<br/>
+            <b>구매 상품 : %1$d coins</b>
+        ]]>
+    </string>
+
+    <string name="msg_signin_failed">로그인에 실패하였습니다.</string>
+    <string name="msg_product_detail_not_found">구매할 수 있는 상품이 없습니다.</string>
+
+    <string name="desc_recurring_notice">안내</string>
+    <string name="desc_recurring_notice_desc">이 앱은 스토어에서 In-App SDK의 이해를 돕기 위한 샘플 앱으로, 상용 판매 목적으로 만들어진 앱이 아닙니다.
+        \n스토어 또는 스토어 In-App 상품 개발에 대해 더 궁금한 점이 있을 경우 스토어 개발자센터를 방문해주세요.</string>
+
+    <string name="desc_subscription_purchased">구독 상품에 가입되어 있습니다.</string>
+    <string name="msg_open_subscription_detail">구독한 상품의 상세 화면으로 이동</string>
+    <string name="msg_open_subscriptions_menu">구독 관리메뉴로 이동</string>
+
+
+</resources>
+
+

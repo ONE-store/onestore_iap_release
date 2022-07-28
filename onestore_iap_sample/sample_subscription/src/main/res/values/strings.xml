@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Subscription InApp v21</string>
+    <string name="app_bar_title">ONE Store IAP v21</string>
+    <string name="shop_title">Subscription, start!!</string>
+    <string name="management_title">Subs Mgmt.</string>
+
+
+    <string-array name="inapp_products_ids">
+        <item>year</item>
+        <item>half_year</item>
+        <item>three_month</item>
+        <item>month</item>
+        <item>week</item>
+    </string-array>
+
+    <string-array name="option_items">
+        <item>IMMEDIATE_WITH_TIME_PRORATION</item>
+        <item>IMMEDIATE_AND_CHARGE_PRORATED_PRICE</item>
+        <item>IMMEDIATE_WITHOUT_PRORATION</item>
+        <item>DEFERRED</item>
+    </string-array>
+
+    <string name="option_title">비례배분 옵션변경</string>
+    <string name="msg_product_detail_not_found">There are no products available for purchase.</string>
+</resources>

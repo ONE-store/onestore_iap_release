@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="view"
+            type="com.gaa.appdev.iap.sample.MainActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.gaa.appdev.iap.sample.MainViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- coin view -->
+        <include layout="@layout/view_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            bind:coin="@{viewModel.savedCoin}"
+            bind:onBuy="@{(v) -> view.showBuyProductDialog()}"/>
+
+        <com.gaa.appdev.iap.sample.widget.LuckyNumberView
+            android:id="@+id/luckyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.gaa.appdev.iap.sample.widget.ResultNumberView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/view_play"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            bind:callback="@{(v) -> view.playGame()}"/>
+    </LinearLayout>
+</layout>

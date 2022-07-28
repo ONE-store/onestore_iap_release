@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LuckyONE v21</string>
+    <string name="msg_alert_no_coin">Not enough coins. Do you want to buy coins?</string>
+
+    <string name="msg_alert_signature_invalid">Signature information is invalid.</string>
+    <string name="msg_alert_move_subscription_detail">You have a subscription product. Shall we go to the subscription product details screen?</string>
+
+    <string name="btn_number_generate_inapp_primary">Generate Numbers</string>
+    <string name="btn_number_generate_inapp_desc">(spend 5 coins)</string>
+    <string name="btn_number_generate_subs_primary">Generate Numbers</string>
+    <string name="btn_number_generate_subs_desc">(Unlimited play – Subscription)</string>
+
+    <string name="msg_earning_coins">
+        <![CDATA[
+            Congrats!<br/>
+            <b>You won %1$d coins!</b>
+        ]]>
+    </string>
+
+    <string name="msg_purchase_success_inapp">
+        <![CDATA[
+            Paid successfully.<br/>
+            <b>You bought %1$d coins.</b>
+        ]]>
+    </string>
+
+    <string name="msg_signin_failed">Failed to sign in.</string>
+    <string name="msg_product_detail_not_found">There are no products available for purchase.</string>
+
+    <string name="desc_recurring_notice">Notice</string>
+    <string name="desc_recurring_notice_desc">This is a demo app for Store In-App Purchase SDK.
+        \nFor more information, visit the Store developer center.</string>
+
+    <string name="desc_subscription_purchased">You are subscribed to a subscription product.</string>
+    <string name="msg_open_subscription_detail">Open the detailed screen of the subscription product.</string>
+    <string name="msg_open_subscriptions_menu">Open the subscriptions menu.</string>
+
+
+</resources>
+
+
