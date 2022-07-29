@@ -12,6 +12,7 @@ buildscript {
         jvmTarget = '11'
 
         onestore_iap_version = '21.00.00'
+        onestore_configuration_korea_region = 'sdk-configuration-kr'
         onestore_configuration_version = '1.0.0'
     }
     repositories {

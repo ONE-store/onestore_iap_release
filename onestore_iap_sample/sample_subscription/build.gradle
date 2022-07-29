@@ -74,7 +74,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
 
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
-    implementation "com.onestorecorp.sdk:sdk-configuration-kr:$onestore_configuration_version"
+    implementation "com.onestorecorp.sdk:$onestore_configuration_korea_region:$onestore_configuration_version"
 
     implementation 'com.google.code.gson:gson:2.9.0'
 

@@ -55,6 +55,8 @@ android {
             path 'src/main/jni/Android.mk'
         }
     }
+    buildToolsVersion '32.0.0'
+    ndkVersion '21.4.7075529'
 
     applicationVariants.all { variant ->
         if (variant.buildType.name == "release") {
@@ -74,7 +76,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
-    implementation "com.onestorecorp.sdk:sdk-configuration-kr:$onestore_configuration_version"
+    implementation "com.onestorecorp.sdk:$onestore_configuration_korea_region:$onestore_configuration_version"
 
     implementation 'com.google.code.gson:gson:2.9.0'
 
