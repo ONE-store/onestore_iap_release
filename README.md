@@ -21,7 +21,7 @@ And, add the dependency to your project gradle.
 
 ```
 dependencies {
-    def onestore_iap_version = "21.00.00"
+    def onestore_iap_version = "21.00.01"
     def onestore_configuration_version = "1.0.0"
     def onestore_configuration_region = "sdk-configuration-kr"
     
@@ -43,6 +43,8 @@ If you want to download older SDK(v19), click [This Link](https://github.com/ONE
 
 ## Change Note
 
+* 2023-01-09
+	* Exception handling when the purchase data is null when calling consume and acknowlege API.
 * 2022-07-29 
 	* Uploaded samples for ONEstore Purchase Library v7. 
 
