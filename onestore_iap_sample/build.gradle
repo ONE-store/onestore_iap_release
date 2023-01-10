@@ -11,7 +11,7 @@ buildscript {
         javaVersion = JavaVersion.VERSION_11
         jvmTarget = '11'
 
-        onestore_iap_version = '21.00.00'
+        onestore_iap_version = '21.00.01'
         onestore_configuration_korea_region = 'sdk-configuration-kr'
         onestore_configuration_version = '1.0.0'
     }
