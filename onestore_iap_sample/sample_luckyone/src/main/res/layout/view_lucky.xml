@@ -32,37 +32,37 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:fitDirection="width" />
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:fitDirection="width"/>
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:fitDirection="width"/>
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:fitDirection="width"/>
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:fitDirection="width"/>
 
-        <com.gaa.appdev.iap.sample.widget.BallView
+        <com.onestore.sample.inapp.widget.BallView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

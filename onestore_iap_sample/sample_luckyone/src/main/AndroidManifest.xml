@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gaa.appdev.iap.sample">
+    package="com.onestore.sample.inapp">
 
+    <!--
+        if your binary use ONE store's In-app SDK,
+        Please make sure to declare the following query on Androidmanifest.xml.
+        Refer to the notice for more information.
+        https://dev.onestore.co.kr/devpoc/support/news/noticeView.omp?noticeId=32968
+     -->
     <queries>
         <intent>
             <action android:name="com.onestore.ipc.iap.IapService.ACTION" />
@@ -30,10 +36,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Options for in-app testing on your global store -->
+        <!-- <meta-data android:name="onestore:dev_option" android:value="global" /> -->
     </application>
 
-    <meta-data
-        android:name="iap:view_option"
-        android:value="popup" />
+
 
 </manifest>

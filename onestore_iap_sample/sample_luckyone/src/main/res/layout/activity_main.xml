@@ -3,11 +3,11 @@
     <data>
         <variable
             name="view"
-            type="com.gaa.appdev.iap.sample.MainActivity" />
+            type="com.onestore.sample.inapp.MainActivity" />
 
         <variable
             name="vm"
-            type="com.gaa.appdev.iap.sample.MainViewModel" />
+            type="com.onestore.sample.inapp.MainViewModel" />
     </data>
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:bind="http://schemas.android.com/tools"
@@ -15,7 +15,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context="com.onestore.sample.inapp.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"

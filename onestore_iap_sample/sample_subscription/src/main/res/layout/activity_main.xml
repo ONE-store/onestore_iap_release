@@ -3,10 +3,10 @@
     <data>
         <variable
             name="view"
-            type="com.gaa.appdev.subscription.sample.ui.MainActivity" />
+            type="com.onestore.sample.subscription.ui.MainActivity" />
         <variable
             name="vm"
-            type="com.gaa.appdev.subscription.sample.ui.MainViewModel" />
+            type="com.onestore.sample.subscription.ui.MainViewModel" />
 
         <import type="android.view.View"/>
     </data>
@@ -15,7 +15,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        tools:context="com.onestore.sample.subscription.ui.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar_layout"

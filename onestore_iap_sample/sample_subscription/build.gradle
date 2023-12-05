@@ -10,38 +10,15 @@ android {
     defaultConfig {
         minSdk rootProject.ext.minSdkVersion
         targetSdk rootProject.ext.targetSdkVersion
-        applicationId "com.dev.inapp.test"
-        versionCode 3
-        versionName "1.0.2"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    signingConfigs {
-        release {
-            keyAlias 'signkey01'
-            keyPassword 'signkey01'
-            storeFile file('../signkey01.jks')
-            storePassword 'signkey01'
-        }
-    }
-
-    applicationVariants.all { variant ->
-        if (variant.buildType.name == "release") {
-            renameAPK(variant, 'release', applicationId, versionName, versionCode)
-        }
+        applicationId "com.onestore.sample.subscription"
+        versionCode 1
+        versionName "1.0.0"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-
-        debug {
-            debuggable true
-            signingConfig signingConfigs.release
         }
     }
     compileOptions {
@@ -55,16 +32,9 @@ android {
     dataBinding {
         enabled = true
     }
-
-    externalNativeBuild {
-        ndkBuild {
-            path 'src/main/jni/Android.mk'
-        }
-    }
 }
 
 dependencies {
-//    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
@@ -74,21 +44,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
 
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
-    implementation "com.onestorecorp.sdk:$onestore_configuration_korea_region:$onestore_configuration_version"
 
     implementation 'com.google.code.gson:gson:2.9.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-}
-
-def renameAPK(variant, buildType, applicationId, versionName, versionCode) {
-    variant.outputs.all { output ->
-        def formattedDate = new Date().format('yyMMdd_HHmm')
-        def name = "SubscriptionApp"
-
-        outputFileName = name + "-v21-" + applicationId + "-v" + versionName + "(" + versionCode + ")" + "-" + formattedDate + "-" + buildType + ".apk"
-
-    }
 }

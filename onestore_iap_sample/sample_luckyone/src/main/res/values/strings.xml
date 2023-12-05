@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LuckyONE v21</string>
+    <string name="app_name">LuckyONE</string>
     <string name="msg_alert_no_coin">Not enough coins. Do you want to buy coins?</string>
 
     <string name="msg_alert_signature_invalid">Signature information is invalid.</string>

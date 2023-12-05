@@ -3,11 +3,11 @@
     <data>
         <variable
             name="view"
-            type="com.gaa.appdev.iap.sample.MainActivity" />
+            type="com.onestore.sample.inapp.MainActivity" />
 
         <variable
             name="viewModel"
-            type="com.gaa.appdev.iap.sample.MainViewModel" />
+            type="com.onestore.sample.inapp.MainViewModel" />
     </data>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -27,13 +27,13 @@
             bind:coin="@{viewModel.savedCoin}"
             bind:onBuy="@{(v) -> view.showBuyProductDialog()}"/>
 
-        <com.gaa.appdev.iap.sample.widget.LuckyNumberView
+        <com.onestore.sample.inapp.widget.LuckyNumberView
             android:id="@+id/luckyView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
-        <com.gaa.appdev.iap.sample.widget.ResultNumberView
+        <com.onestore.sample.inapp.widget.ResultNumberView
             android:id="@+id/resultView"
             android:layout_width="match_parent"
             android:layout_height="0dp"

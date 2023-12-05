@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gaa.appdev.subscription.sample">
+    package="com.onestore.sample.subscription">
 
     <queries>
         <intent>
@@ -21,9 +21,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Subscription_sample">
         <activity
-            android:name=".ui.SettingsActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -33,9 +30,9 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="iap:view_option"
-            android:value="full" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

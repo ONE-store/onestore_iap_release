@@ -5,11 +5,11 @@
 
         <variable
             name="view"
-            type="com.gaa.appdev.subscription.sample.ui.SettingsActivity" />
+            type="com.onestore.sample.subscription.ui.SettingsActivity" />
 
         <variable
             name="vm"
-            type="com.gaa.appdev.subscription.sample.ui.SettingsViewModel" />
+            type="com.onestore.sample.subscription.ui.SettingsViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +17,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.SettingsActivity">
+        tools:context="com.onestore.sample.subscription.ui.SettingsActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar_layout"
