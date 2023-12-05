@@ -21,12 +21,9 @@ And, add the dependency to your project gradle.
 
 ```
 dependencies {
-    def onestore_iap_version = "21.00.02"
-    def onestore_configuration_version = "1.0.0"
-    def onestore_configuration_region = "sdk-configuration-kr"
+    def onestore_iap_version = "21.01.00"
     
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
-    implementation "com.onestorecorp.sdk:$onestore_configuration_region:$onestore_configuration_version"
 }
 ```
 
@@ -42,6 +39,9 @@ If you want to download older SDK(v19), click [This Link](https://github.com/ONE
 	* Can download json file for korea region using the maven.
 
 ## Change Note
+* 2023-12-05
+  	* In-app v21.01.00 has been applied.
+  	* `sdk-configuration-xx` is deprecated.  
 * 2023-05-18
 	* Fixed [issue#5](https://github.com/ONE-store/onestore_iap_release/issues/5)
 * 2023-01-09
