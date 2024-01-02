@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import com.gaa.sdk.iap.Logger;
 import com.google.gson.Gson;
 import com.gaa.sdk.iap.IapResult;
 import com.gaa.sdk.iap.IapResultListener;
@@ -130,6 +131,8 @@ public class MainActivity extends AppCompatActivity implements PurchaseManager.C
         updatePlayButtonText(isMonthlyItemAvailable());
 
         showProgressDialog();
+
+        Logger.setLogLevel(Log.VERBOSE);
         mPurchaseManager = new PurchaseManager(this, this);
     }
 
