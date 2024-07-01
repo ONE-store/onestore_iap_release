@@ -15,7 +15,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://repo.onestore.co.kr/repository/onestore-sdk-public' }
+        maven { url 'https://repo.onestore.net/repository/onestore-sdk-public' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.3'

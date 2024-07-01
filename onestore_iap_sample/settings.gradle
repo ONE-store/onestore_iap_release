@@ -3,7 +3,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://repo.onestore.co.kr/repository/onestore-sdk-public' }
+        maven { url 'https://repo.onestore.net/repository/onestore-sdk-public' }
     }
 }
 rootProject.name = "onestore_iap_sample"

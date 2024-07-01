@@ -13,7 +13,7 @@ Add the maven url to root gradle.
 ```
 repositories {
     ...
-    maven { url 'https://repo.onestore.co.kr/repository/onestore-sdk-public' }
+    maven { url 'https://repo.onestore.net/repository/onestore-sdk-public' }
 }
 ```
 
@@ -39,6 +39,8 @@ If you want to download older SDK(v19), click [This Link](https://github.com/ONE
 	* Can download json file for korea region using the maven.
 
 ## Change Note
+* 2024-07-01
+  	* Maven Url changed.
 * 2023-12-05
   	* In-app v21.01.00 has been applied.
   	* `sdk-configuration-xx` is deprecated.  
