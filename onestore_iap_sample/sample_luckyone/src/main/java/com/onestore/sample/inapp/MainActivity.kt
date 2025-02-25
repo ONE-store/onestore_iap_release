@@ -17,6 +17,9 @@ import androidx.cardview.widget.CardView
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.gaa.sdk.auth.SignInResult
+import com.gaa.sdk.base.Logger
+import com.gaa.sdk.base.StoreEnvironment
+import com.gaa.sdk.base.StoreEnvironment.StoreType
 import com.gaa.sdk.iap.*
 import com.gaa.sdk.iap.PurchaseClient.ProductType
 import com.google.gson.Gson
@@ -100,6 +103,14 @@ class MainActivity : AppCompatActivity(), PurchaseManager.Callback {
         updatePlayButtonText(getSubscriptionItem() != null)
         showProgressDialog()
 
+        /**
+         * SDK 로그레벨 설정
+         * 경고! 이 코드는 보안 취약점이 발생할 수 있으므로 릴리스 빌드에서는 반드시 삭제해야 합니다.
+         * 개발 환경에서만 사용하십시오.
+         */
+        Logger.setLogLevel(Log.VERBOSE)
+        detectStoreEnvironment()
+
         mViewModel.setAuthManager(AuthManager(this))
         mViewModel.fetch {
             if (it.isSuccessful){
@@ -110,6 +121,19 @@ class MainActivity : AppCompatActivity(), PurchaseManager.Callback {
         }
 
         addObservers()
+    }
+
+    /**
+     * 현재 앱이 설치된 스토어 환경을 감지하고 해당 정보를 로그로 출력하는 함수입니다.
+     */
+    private fun detectStoreEnvironment() {
+        val storeType = StoreEnvironment.getStoreType(this)
+        when (storeType) {
+            StoreType.ONESTORE -> println("ONE Store에서 설치된 앱입니다.")
+            StoreType.VENDING -> println("Google Play Store에서 설치된 앱입니다.")
+            StoreType.ETC -> println("기타 스토어에서 설치된 앱입니다.")
+            StoreType.UNKNOWN -> println("스토어 정보를 알 수 없습니다.")
+        }
     }
 
     override fun onDestroy() {

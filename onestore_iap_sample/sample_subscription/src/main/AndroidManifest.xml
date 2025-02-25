@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.onestore.sample.subscription">
 
+    <!--
+        if your binary use ONE store's In-app SDK,
+        Please make sure to declare the following query on Androidmanifest.xml.
+        Refer to the notice for more information.
+        https://dev.onestore.co.kr/devpoc/support/news/noticeView.omp?noticeId=32968
+     -->
     <queries>
         <intent>
             <action android:name="com.onestore.ipc.iap.IapService.ACTION" />
@@ -33,6 +39,17 @@
         <activity
             android:name=".ui.SettingsActivity"
             android:exported="false" />
+
+        <!--
+            WARNING: Remove this option for release binaries!
+            Options for in-app testing on your global store (Available from IAP v21.02.00)
+             - onestore_00 : South Korea
+             - onestore_01 : Singapore, Taiwan
+             - onestore_02 : United States (Digital Turbine)
+
+            If not set, defaults to South Korea.
+        -->
+        <!-- <meta-data android:name="onestore:dev_option" android:value="onestore_00" /> -->
     </application>
 
 </manifest>

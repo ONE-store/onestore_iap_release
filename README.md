@@ -10,19 +10,17 @@ Now(IAP API v7), You can download InApp Purchase SDK using the maven system.
 
 Add the maven url to root gradle.
 
-```
+```groovy
 repositories {
-    ...
     maven { url 'https://repo.onestore.net/repository/onestore-sdk-public' }
 }
 ```
 
 And, add the dependency to your project gradle.
 
-```
+```groovy
 dependencies {
-    def onestore_iap_version = "21.01.00"
-    
+    def onestore_iap_version = "21.02.00"
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
 }
 ```
@@ -39,17 +37,20 @@ If you want to download older SDK(v19), click [This Link](https://github.com/ONE
 	* Can download json file for korea region using the maven.
 
 ## Change Note
+* 2025-02-25
+    * Enhanced developer option features  
+    * Added `StoreEnvironment.getStoreType()` API
 * 2024-07-01
-  	* Maven Url changed.
+    * Maven Url changed.
 * 2023-12-05
-  	* In-app v21.01.00 has been applied.
-  	* `sdk-configuration-xx` is deprecated.  
+    * In-app v21.01.00 has been applied.
+    * `sdk-configuration-xx` is deprecated.  
 * 2023-05-18
-	* Fixed [issue#5](https://github.com/ONE-store/onestore_iap_release/issues/5)
+    * Fixed [issue#5](https://github.com/ONE-store/onestore_iap_release/issues/5)
 * 2023-01-09
-	* Exception handling when the purchase data is null when calling consume and acknowlege API.
+    * Exception handling when the purchase data is null when calling consume and acknowlege API.
 * 2022-07-29 
-	* Uploaded samples for ONEstore Purchase Library v7. 
+    * Uploaded samples for ONEstore Purchase Library v7. 
 
 
 # License
