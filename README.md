@@ -36,6 +36,9 @@ If you want to download older SDK(v19), click [This Link](https://github.com/ONE
 * Changed the deployment flow of json file(global-appstore.json)
 	* Can download json file for korea region using the maven.
 
+For more details, please refer to the official guide.
+[ONEstore InApp Purchase Guide](https://onestore-dev.gitbook.io/dev/tools/tools/v21/04.-sdk)
+
 ## Change Note
 * 2025-02-25
     * Enhanced developer option features  
