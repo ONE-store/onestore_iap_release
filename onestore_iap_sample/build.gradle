@@ -10,7 +10,7 @@ buildscript {
         javaVersion = JavaVersion.VERSION_11
         jvmTarget = '11'
 
-        onestore_iap_version = '21.03.00'
+        onestore_iap_version = '21.04.00'
     }
     repositories {
         google()

@@ -42,7 +42,7 @@
 
         <!--
             WARNING: Remove this option for release binaries!
-            Options for in-app testing on your global store (Available from IAP v21.02.00)
+            Options for in-app testing on your global store (Available from IAP v21.04.00)
              - onestore_00 : South Korea
              - onestore_01 : Singapore, Taiwan
              - onestore_02 : United States (Digital Turbine)
