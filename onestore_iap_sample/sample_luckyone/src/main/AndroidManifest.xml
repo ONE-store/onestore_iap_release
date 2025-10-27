@@ -43,6 +43,7 @@
              - onestore_00 : South Korea
              - onestore_01 : Singapore, Taiwan
              - onestore_02 : United States (Digital Turbine)
+             - onestore_03 : ONE Billing Lab
 
             If not set, defaults to South Korea.
         -->
