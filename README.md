@@ -20,7 +20,7 @@ And, add the dependency to your project gradle.
 
 ```groovy
 dependencies {
-    def onestore_iap_version = "21.02.01"
+    def onestore_iap_version = "21.03.00"
     implementation "com.onestorecorp.sdk:sdk-iap:$onestore_iap_version"
 }
 ```
@@ -40,6 +40,9 @@ For more details, please refer to the official guide.
 [ONEstore InApp Purchase Guide](https://onestore-dev.gitbook.io/dev/tools/tools/v21/04.-sdk)
 
 ## Change Note
+* 2025-10-27
+    * In-app v21.03.00 has been applied.
+    * Updated build tools (Gradle 8.5, AGP 8.3.2, Kotlin 1.9.22)
 * 2025-03-10
     * Fix exception handling bug when using `getApplicationEnabledSetting()`
 * 2025-02-25

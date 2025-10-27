@@ -5,6 +5,8 @@ plugins {
 }
 
 android {
+    namespace 'com.onestore.sample.inapp'
+
     compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
