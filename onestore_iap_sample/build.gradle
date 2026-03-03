@@ -11,6 +11,7 @@ buildscript {
         jvmTarget = '11'
 
         onestore_iap_version = '21.04.00'
+        onestore_licensing_version = '2.2.1'
     }
     repositories {
         google()

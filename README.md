@@ -3,6 +3,7 @@ Sample applications for ONEstore InApp Purchase.
 
 * [sample_luckyone](https://github.com/ONE-store/onestore_iap_release/tree/master/onestore_iap_sample/sample_luckyone) : Purchase managed and subscription items in your Android app.
 * [sample_subscription](https://github.com/ONE-store/onestore_iap_release/tree/master/onestore_iap_sample/sample_subscription) : Purchase subscriptions and manage subscription.
+* [sample_compose](https://github.com/ONE-store/onestore_iap_release/tree/master/onestore_iap_sample/sample_compose) : Jetpack Compose-based sample for purchasing managed and subscription items, managing subscriptions, and App License verification.
 
 ## InApp Purchase SDK
 ### How to download
@@ -40,6 +41,8 @@ For more details, please refer to the official guide.
 [ONEstore InApp Purchase Guide](https://onestore-dev.gitbook.io/dev/tools/tools/v21/04.-sdk)
 
 ## Change Note
+* 2026-03-03
+    * Added new sample_compose project (Jetpack Compose-based IAP sample)
 * 2025-10-27
     * In-app v21.04.00 has been applied.
     * Updated build tools (Gradle 8.5, AGP 8.3.2, Kotlin 1.9.22)

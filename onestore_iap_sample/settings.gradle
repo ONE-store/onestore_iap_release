@@ -7,4 +7,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "onestore_iap_sample"
-include ':sample_subscription', ':sample_luckyone'
+include ':sample_subscription', ':sample_luckyone', ':sample_compose'

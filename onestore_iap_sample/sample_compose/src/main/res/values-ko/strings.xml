@@ -1,0 +1,99 @@
+<resources>
+    <!-- 공통 -->
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="close">닫기</string>
+    <string name="copy">복사</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="unknown">알 수 없음</string>
+
+    <!-- 메인 화면 -->
+    <string name="dialog_message_login_required">인앱 서비스 로그인이 필요합니다.</string>
+    <string name="dialog_message_update_required">서비스 업데이트가 필요합니다.</string>
+    <string name="dialog_button_update">업데이트</string>
+
+    <!-- 알림창 -->
+    <string name="alert_title_error">오류</string>
+    <string name="alert_title_notification">알림</string>
+
+    <!-- 상품 목록 -->
+    <string name="product_list_title">상품 목록</string>
+    <string name="product_list_empty">상품 목록 없음</string>
+    <string name="product_empty_message">등록된 상품이 없습니다.</string>
+    <string name="product_type_monthly">월정액</string>
+    <string name="product_type_inapp">관리형</string>
+    <string name="product_type_subscription">구독형</string>
+    <string name="product_status_auto_canceling">자동 결제 해지\n예약중</string>
+    <string name="product_status_auto_recurring">자동 결제중</string>
+    <string name="product_status_need_confirmation">구매 처리 확인</string>
+    <string name="product_status_subscribing">구독 중</string>
+    <string name="product_status_subs_canceling">구독 해지 예약중</string>
+
+    <!-- 상품 카테고리 -->
+    <string name="product_category_monthly">월정액 상품</string>
+    <string name="product_category_inapp">관리형 상품</string>
+    <string name="product_category_subscription">구독형 상품</string>
+    <string name="toast_check_purchase_waiting_list">구매 처리 목록 탭에서 확인 필요!</string>
+    <string name="product_detail_purchase_default">구매하기</string>
+
+    <!-- 설정 헤더 -->
+
+    <!-- 설정 정보 -->
+    <string name="settings_action_manage_subscription">정기결제 목록화면으로 이동</string>
+
+    <!-- 앱 라이선스 검증 결과 -->
+    <string name="app_license_msg_check_license">라이선스 상태를 확인하려면 위 버튼을 눌러주세요.</string>
+
+    <!-- 상품 상세 -->
+    <string name="product_detail_title">상품 상세 정보</string>
+    <string name="product_detail_id">상품 ID</string>
+    <string name="product_detail_type">상품 타입</string>
+    <string name="product_detail_price">가격</string>
+    <string name="product_detail_currency_code">통화 코드</string>
+    <string name="product_detail_status">상태</string>
+    <string name="product_detail_subscription_period">구독 기간</string>
+    <string name="product_detail_subscription_unit">구독 단위</string>
+    <string name="product_detail_unknown">알수 없음</string>
+    <string name="product_detail_unpurchased">미구매</string>
+    <string name="product_detail_purchase_count">구매 갯수 : %d</string>
+    <string name="product_detail_purchase_monthly">월정액 상품 결제</string>
+    <string name="product_detail_purchase_inapp">관리형 상품 결제</string>
+    <string name="product_detail_purchase_subscription">구독형 상품 결제</string>
+    <string name="product_detail_manage_monthly">월정액 상품 상태 변경</string>
+    <string name="product_detail_manage_subscription">정기 결제 관리</string>
+    <string name="product_detail_upgrade_downgrade">업/다운그레이드</string>
+    <string name="product_detail_proration_mode">비례 배분 모드</string>
+    <string name="product_detail_subscription_list">구독형 상품 목록</string>
+
+    <!-- 구매 처리 목록 -->
+    <string name="purchase_waiting_title">구매 처리</string>
+    <string name="purchase_waiting_empty">구매 처리가 필요한 상품이 없습니다.</string>
+    <string name="purchase_waiting_confirm_message">이 상품에 대한 처리를 진행하시겠습니까?</string>
+
+    <!-- 앱 라이선스 검증 화면 -->
+    <string name="app_license_check_cache">라이선스 확인\n(캐시 정책에 따름)</string>
+    <string name="app_license_check_server">라이센스 확인\n(서버 확인)</string>
+    <string name="license_check_cached_policy">라이선스 확인\n(캐시 정책에 따름)</string>
+    <string name="license_check_server_check">라이센스 확인\n(서버 확인)</string>
+    <string name="app_license_info">라이센스 정보</string>
+    <string name="app_license_denied">거부 정보</string>
+    <string name="app_license_error">에러 정보</string>
+
+    <!-- 설정 화면 -->
+    <string name="settings_title">설정</string>
+    <string name="settings_log_enable">로그 활성화</string>
+    <string name="settings_log_enable_desc">라이브러리 로그를 활성화하거나 비활성화합니다.</string>
+    
+    <!-- 추가 설정 화면 -->
+
+    <!-- 스토어 타입 -->
+    <string name="store_type_onestore">원스토어</string>
+    <string name="store_type_play_store">Play 스토어</string>
+    <string name="store_type_etc">기타 스토어</string>
+    <string name="store_type_unknown">알 수 없음</string>
+
+    <!-- 공통 액션 -->
+    <string name="action_select">선택</string>
+    <string name="action_back">뒤로가기</string>
+</resources>

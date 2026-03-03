@@ -14,8 +14,6 @@ import java.security.spec.X509EncodedKeySpec
 import java.util.Random
 
 /**
- * Created by 1000147 on 2017. 9. 4..
- *
  * SDK 내부에도 verifyPurchase 부분이 아래의 로직 처럼 동일하게 구현되어 있다 앱에서 사용을 위해서 참고용이다.
  * 앱(클라이언트)에서는 어떠한 보안 로직도 안전할수가 없다. 앱의 모든 부분의 보안이 노출되더라도 로직은 서버를 통해서 구현되어야 안전하며 실제로도 그렇게 구현해야 한다.
  *

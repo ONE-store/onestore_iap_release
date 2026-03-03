@@ -1,0 +1,118 @@
+<resources>
+    <!-- Common -->
+    <string name="app_name" translatable="false">InApp Compose v21</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Main Screen -->
+    <string name="dialog_message_login_required">InApp service login is required.</string>
+    <string name="dialog_message_update_required">Service update is needed.</string>
+    <string name="dialog_button_update">Update</string>
+
+    <!-- Alert -->
+    <string name="alert_title_error">Error</string>
+    <string name="alert_title_notification">Notification</string>
+
+    <!-- Product List -->
+    <string name="product_list_title">Product List</string>
+    <string name="product_list_empty">No products available</string>
+    <string name="product_empty_message">No products registered.</string>
+    <string name="product_type_monthly">Monthly</string>
+    <string name="product_type_inapp">In-App</string>
+    <string name="product_type_subscription">Subscription</string>
+    <string name="product_status_auto_canceling">Auto payment\ncancellation</string>
+    <string name="product_status_auto_recurring">Auto recurring</string>
+    <string name="product_status_need_confirmation">Purchase\nconfirmation</string>
+    <string name="product_status_subscribing">Subscribing</string>
+    <string name="product_status_subs_canceling">Subscription\ncanceling</string>
+
+    <!-- Product Category -->
+    <string name="product_category_monthly">Monthly Products</string>
+    <string name="product_category_inapp">In-App Products</string>
+    <string name="product_category_subscription">Subscription Products</string>
+    <string name="toast_check_purchase_waiting_list">Please check the Purchase Process tab!</string>
+    <string name="product_detail_purchase_default">Purchase</string>
+
+    <!-- Settings Info -->
+    <string name="settings_action_manage_subscription">Go to Subscription Management</string>
+
+    <!-- App License Check Result -->
+    <string name="app_license_result_granted" translatable="false">Granted</string>
+    <string name="app_license_result_denied" translatable="false">Denied</string>
+    <string name="app_license_result_error" translatable="false">Error</string>
+    <string name="app_license_label_license" translatable="false">License</string>
+    <string name="app_license_label_signature" translatable="false">Signature</string>
+    <string name="app_license_label_code" translatable="false">Code</string>
+    <string name="app_license_label_message" translatable="false">Message</string>
+    <string name="app_license_msg_check_license">Please click the button above to check the license status.</string>
+
+    <!-- Product Detail -->
+    <string name="product_detail_title">Product Details</string>
+    <string name="product_detail_id">Product ID</string>
+    <string name="product_detail_type">Product Type</string>
+    <string name="product_detail_price">Price</string>
+    <string name="product_detail_currency_code">Currency Code</string>
+    <string name="product_detail_status">Status</string>
+    <string name="product_detail_acknowledged" translatable="false">isAcknowledged</string>
+    <string name="product_detail_subscription_period">Subscription Period</string>
+    <string name="product_detail_subscription_unit">Subscription Unit</string>
+    <string name="product_detail_unknown">Unknown</string>
+    <string name="product_detail_unpurchased">Not purchased</string>
+    <string name="product_detail_purchase_count">Purchase Count: %d</string>
+    <string name="product_detail_purchase_monthly">Monthly Payment</string>
+    <string name="product_detail_purchase_inapp">Purchase In-App</string>
+    <string name="product_detail_purchase_subscription">Subscribe</string>
+    <string name="product_detail_manage_monthly">Manage Monthly Product</string>
+    <string name="product_detail_manage_subscription">Manage Subscription</string>
+    <string name="product_detail_upgrade_downgrade">Up/Downgrade</string>
+    <string name="product_detail_proration_mode">Proration Mode</string>
+    <string name="product_detail_subscription_list">Subscription List</string>
+
+    <!-- Purchase Waiting List -->
+    <string name="purchase_waiting_title">Purchase Process</string>
+    <string name="purchase_waiting_empty">No products need to be processed.</string>
+    <string name="purchase_waiting_confirm_message">Do you want to proceed with this product?</string>
+    <string name="purchase_acknowledge" translatable="false">Acknowledge</string>
+    <string name="purchase_consume" translatable="false">Consume</string>
+
+    <!-- App License Check Screen -->
+    <string name="app_license_title" translatable="false">License</string>
+    <string name="app_license_screen_title" translatable="false">App License Checker</string>
+    <string name="app_license_public_key" translatable="false">Public Key</string>
+    <string name="app_license_check_cache">License Check\n(Cache Policy)</string>
+    <string name="app_license_check_server">License Check\n(Server Check)</string>
+    <string name="license_check_cached_policy">License Check\n(Cache Policy)</string>
+    <string name="license_check_server_check">License Check\n(Server Check)</string>
+    <string name="app_license_info">License Info</string>
+    <string name="app_license_denied">Denied Info</string>
+    <string name="app_license_error">Error Info</string>
+    <string name="granted" translatable="false">Granted</string>
+    <string name="license" translatable="false">License</string>
+    <string name="signature" translatable="false">Signature</string>
+    <string name="denied" translatable="false">Denied</string>
+    <string name="code" translatable="false">Code</string>
+    <string name="message" translatable="false">Message</string>
+    <string name="error" translatable="false">Error</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_log_enable">Enable Log</string>
+    <string name="settings_log_enable_desc">Enable or disable library logs.</string>
+    
+    <!-- Additional Settings Screen -->
+
+    <!-- Store Type -->
+    <string name="store_type_onestore">ONE Store</string>
+    <string name="store_type_play_store">Play Store</string>
+    <string name="store_type_etc">Other Store</string>
+    <string name="store_type_unknown">Unknown</string>
+
+    <!-- Common Actions -->
+    <string name="action_select">Select</string>
+    <string name="action_back">Back</string>
+</resources>
